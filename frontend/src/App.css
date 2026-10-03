@@ -1,0 +1,226 @@
+.landingPageContainer {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #101b4d;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.landingPageContainer nav,
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+  padding-block: 1.25rem;
+}
+
+.landingPageContainer nav h2,
+.navBar h2 {
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+  font-weight: 600;
+}
+
+.landingPageContainer nav .navList,
+.navActions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.navList p {
+  margin: 0;
+}
+
+.landingMainContainer,
+.meetContainer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+  align-items: center;
+  gap: clamp(2rem, 8vw, 7rem);
+  width: min(100% - 3rem, 1200px);
+  min-height: calc(100dvh - 88px);
+  margin-inline: auto;
+}
+
+.landingMainContainer > div:first-child {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+}
+
+.landingMainContainer h1 {
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  line-height: 1.1;
+}
+
+.landingMainContainer > div:first-child div[role="button"] {
+  background: #d97500;
+  width: fit-content;
+  padding: 0.85rem 1.25rem;
+  border-radius: 999px;
+  margin-top: 1.5rem;
+}
+
+.landingMainContainer > div:first-child div[role="button"] a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.landingMainContainer > div:last-child {
+  justify-self: center;
+}
+
+.landingMainContainer > div:last-child img {
+  display: block;
+  width: min(100%, 390px);
+  max-height: min(68dvh, 620px);
+  object-fit: contain;
+}
+
+.homePage {
+  min-height: 100dvh;
+}
+
+.meetContainer {
+  padding-bottom: 2rem;
+}
+
+.leftPanel,
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.meetingCard {
+  width: min(100%, 580px);
+}
+
+.meetingCard h2 {
+  font-size: clamp(1.8rem, 4vw, 3.25rem);
+  line-height: 1.15;
+}
+
+.meetingForm {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.meetingField {
+  flex: 1;
+}
+
+.rightPanel {
+  justify-content: center;
+}
+
+.rightPanel > img {
+  width: min(100%, 420px);
+  height: auto;
+  border-radius: 1.25rem;
+}
+
+.historyPage {
+  min-height: 100dvh;
+  padding: clamp(1rem, 4vw, 3rem);
+  background: #f7f8fc;
+}
+
+.historyHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: min(100%, 900px);
+  margin: 0 auto 1.5rem;
+}
+
+.historyHeader h1 {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+.historyList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 1rem;
+  width: min(100%, 900px);
+  margin-inline: auto;
+}
+
+.historyCard {
+  min-width: 0;
+}
+
+.emptyHistory {
+  width: min(100%, 900px);
+  margin: 3rem auto;
+  text-align: center;
+  color: #5f6368;
+}
+
+@media (max-width: 700px) {
+  .landingPageContainer nav,
+  .navBar {
+    width: min(100% - 1.5rem, 1200px);
+    align-items: flex-start;
+  }
+
+  .landingPageContainer nav {
+    flex-direction: column;
+  }
+
+  .navList,
+  .navActions {
+    width: 100%;
+  }
+
+  .landingMainContainer,
+  .meetContainer {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: min(100% - 2rem, 560px);
+    min-height: auto;
+    padding-block: 2.5rem;
+    text-align: center;
+  }
+
+  .landingMainContainer > div:first-child div[role="button"] {
+    margin-inline: auto;
+  }
+
+  .landingMainContainer > div:last-child img {
+    width: min(72vw, 300px);
+    max-height: 42dvh;
+  }
+
+  .leftPanel,
+  .rightPanel {
+    justify-content: center;
+  }
+
+  .meetingForm {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .meetingForm button {
+    min-height: 48px;
+  }
+}
+
+@media (max-width: 420px) {
+  .navBar {
+    flex-direction: column;
+  }
+
+  .navActions {
+    justify-content: center;
+  }
+}
