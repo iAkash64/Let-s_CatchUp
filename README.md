@@ -44,11 +44,11 @@ returns HTTP `201` and creates a document in the `users` collection.
 Do not change source code between local and production. Instead set these
 environment variables in the relevant hosting dashboards and rebuild/redeploy:
 
-| Where | Variable | Value |
-| --- | --- | --- |
-| Backend host | `MONGODB_URI` | Your Atlas URI (keep it secret) |
-| Backend host | `CLIENT_ORIGIN` | The complete frontend URL |
-| Frontend host (build time) | `REACT_APP_API_URL` | The complete backend URL |
+| Where                      | Variable            | Value                           |
+| -------------------------- | ------------------- | ------------------------------- |
+| Backend host               | `MONGODB_URI`       | Your Atlas URI (keep it secret) |
+| Backend host               | `CLIENT_ORIGIN`     | The complete frontend URL       |
+| Frontend host (build time) | `REACT_APP_API_URL` | The complete backend URL        |
 
 If you use multiple frontend URLs, give `CLIENT_ORIGIN` a comma-separated
 list. Never commit `.env` files.
