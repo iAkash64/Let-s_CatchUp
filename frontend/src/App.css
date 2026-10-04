@@ -165,6 +165,27 @@
   color: #5f6368;
 }
 
+.siteFooter {
+  position: fixed;
+  z-index: 30;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.4rem 1rem;
+  color: rgb(255 255 255 / 90%);
+  background: rgb(7 12 38 / 92%);
+  border-top: 1px solid rgb(255 255 255 / 14%);
+  font-size: clamp(0.68rem, 1.8vw, 0.8rem);
+  letter-spacing: 0.02em;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.siteFooter span {
+  color: #fbbf24;
+  font-weight: 700;
+}
+
 @media (max-width: 700px) {
   .landingPageContainer nav,
   .navBar {

@@ -19,6 +19,10 @@ function App() {
             <Route path="/history" element={<History />} />
             <Route path="/:url" element={<VideoMeetComponent />} />
           </Routes>
+          <footer className="siteFooter">
+            © {new Date().getFullYear()} Let's CatchUp · Developed by{" "}
+            <span>~ AKASH KUMAR</span>
+          </footer>
         </AuthProvider>
       </Router>
     </>
