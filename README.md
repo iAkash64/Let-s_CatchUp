@@ -1,7 +1,9 @@
 # Zoom Clone
 
-A full-stack video-conferencing application built with React, Express,
+A full-stack video-conferencing application built with React, Node, Express,
 Socket.IO, and MongoDB Atlas.
+
+🚀 Live Demo : https://let-s-catch-up.vercel.app/
 
 ## Run the project locally
 
