@@ -90,17 +90,11 @@
   position: fixed;
   z-index: 3;
   top: 1rem;
-  right: 1rem;
+  left: 1rem;
   display: flex;
   max-width: min(42vw, 440px);
   gap: 0.5rem;
   overflow-x: auto;
-}
-
-/* Chat must have a completely clear right side for reading and typing. */
-.chatIsOpen .floatingVideo,
-.chatIsOpen .participantStrip {
-  display: none;
 }
 
 .participantThumbnail {
@@ -215,7 +209,7 @@
 
   .participantStrip {
     top: 0.75rem;
-    right: 0.75rem;
+    left: 0.75rem;
     max-width: 58vw;
   }
 
