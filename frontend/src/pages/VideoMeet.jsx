@@ -663,7 +663,7 @@ export default function VideoMeetComponent() {
           </section>
         </main>
       ) : (
-        <div className="meetVideoContainer">
+        <div className={`meetVideoContainer${showModal ? " chatIsOpen" : ""}`}>
           {showModal ? (
             <div className="chatRoom">
               <div className="chatContainer">
